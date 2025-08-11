@@ -60,14 +60,14 @@ const NavBar = () => {
 const Hero = () => (
   <div className="relative overflow-hidden" style={{ backgroundColor: colors.light }}>
     <Container>
-      <div className="grid md:grid-cols-2 gap-10 items-center py-16 md:py-24">
+      <div className="grid md:grid-cols-2 gap-10 items-center py-14 md:py-20">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <Badge tone="red">Accuracy • Dependability • Integrity</Badge>
-          <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight" style={{ color: colors.navy }}>
-            Precise, dependable HR systems for growing teams
+          <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight" style={{ color: colors.navy }}>
+            HR systems that scale with your business
           </h1>
-          <p className="mt-4 text-base md:text-lg text-neutral-700 leading-relaxed max-w-xl">
-            We implement HR tech, automate Microsoft 365 workflows, tighten compliance, and turn workforce data into clear decisions—so you can scale with confidence.
+          <p className="mt-5 text-base md:text-lg text-neutral-700 leading-relaxed max-w-2xl">
+            We implement HRIS, automate Microsoft 365 workflows, and lock down compliance so founders and operators can hire, onboard, and manage with confidence.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Badge tone="navy"><ShieldCheck className="mr-1 h-4 w-4" /> Veteran‑Owned & Operated</Badge>
@@ -75,13 +75,13 @@ const Hero = () => (
             <Badge tone="navy"><BarChart3 className="mr-1 h-4 w-4" /> Workforce Analytics</Badge>
           </div>
           <div className="mt-8 flex gap-3">
-            <Link to="/contact" className="rounded-2xl px-5 py-3 font-semibold shadow-sm border" style={{ backgroundColor: colors.red, color: "white", borderColor: colors.red }}>Email Us</Link>
-            <Link to="/services" className="rounded-2xl px-5 py-3 font-semibold shadow-sm border" style={{ color: colors.navy, borderColor: colors.navy }}>Explore Services</Link>
+            <Link to="/contact" className="rounded-2xl px-6 py-3.5 font-semibold shadow-sm border" style={{ backgroundColor: colors.red, color: "white", borderColor: colors.red }}>Email Us</Link>
+            <Link to="/services" className="rounded-2xl px-6 py-3.5 font-semibold shadow-sm border" style={{ color: colors.navy, borderColor: colors.navy }}>Explore Services</Link>
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.15 }} className="relative">
-          <div className="aspect-[4/3] w-full rounded-3xl shadow-xl border" style={{ borderColor: colors.navy }}>
-            <img src="/FullLogo.png" alt="Precision HR Consulting Logo" className="w-full h-full object-contain p-8" />
+          <div className="aspect-[4/3] w-full rounded-3xl shadow-xl border bg-white" style={{ borderColor: colors.navy }}>
+            <img src="/FullLogo.png" alt="Precision HR Consulting Logo" className="w-full h-full object-contain p-6 md:p-8" />
           </div>
         </motion.div>
       </div>
